@@ -14,10 +14,25 @@ html,body,#all,.sidecontent{
 
 .content{
 	height:100%;
+	background:#ffffff;
 	.trun{
 		width:100%;
 		height:P(414);
-		background:blue;
+		background:gray;
+		.swiper-container{
+			width:P(750);
+			height:P(414);
+			.swiper-wrapper{
+				.swiper-slide{
+					width:P(750);
+					height:P(414);
+					img{
+						width:P(750);
+						height:P(414);
+					}
+				}
+			}
+		}
 	}
 	ul{
 		width:100%;
@@ -30,8 +45,6 @@ html,body,#all,.sidecontent{
 			font-weight:800;
 			color:#333333;
 			margin:(P(42) P(24) P(22) P(24));
-			
-
 		}
 		li:nth-of-type(2){
 			width:P(700);
@@ -163,6 +176,61 @@ html,body,#all,.sidecontent{
 	position: fixed;
 	left:0;
 	z-index: -1;
+	width:50%;
+	.header{
+		width:100%;
+		height:P(135);
+		line-height:P(135);
+		display: flex;
+		align-items:center;
+		justify-content:center;
+		flex-direction:column;
+		background:#fff;
+		
+		.logo{
+			width:P(388);
+			height:P(80);
+			background:url(../../dist/images/logo.png) no-repeat; // 相当于entry
+			background-size:350px 88px;
+		}
+	}
+	ul{
+		width:100%;
+		display:flex;
+		 flex-wrap:wrap;					//子元素对齐方式
+		li{
+			width:33%;
+			height:P(140);
+			display:flex;
+			justify-content: center;
+			flex-direction:column;			//子元素在父元素中的位置
+			align-items:center;				//侧轴对齐方式
+			background:#f0f0f0;
+			border-right:1px solid gray; 
+			border-bottom:1px solid gray; 
+			.nav{
+				width:P(70);
+				height:P(70);
+				line-height:P(70);
+				border-radius:50%;
+				background:#fff;
+
+				.p1{
+					font-size:P(52);
+					text-align: center;
+				}
+			}
+			.navP1{background:#01959e;}
+			.p2{
+					width:P(84);
+					height:P(56);
+					line-height:P(56);
+					text-align: center;
+					font-size:P(24);
+				}
+			
+		}
+	}
 }
 .right{
 	position: fixed;
@@ -225,3 +293,6 @@ html,body,#all,.sidecontent{
 		}
 	}
 }
+
+
+
